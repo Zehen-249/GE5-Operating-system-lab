@@ -1,0 +1,166 @@
+with open('file1.txt', 'r') as file:
+    with open("file2.txt",'w') as file2:
+        buffer = file.read(10)
+        while(buffer):
+            print(buffer,end="\n")
+            file2.write(buffer)
+            buffer = file.read(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import os
+
+# read_file = os.open("file1.txt",os.O_RDONLY)
+# write_file = os.open("file2.txt",os.O_WRONLY|os.O_CREAT)
+
+# buffer = os.read(read_file,10)
+# while(buffer):
+#     print(buffer.decode('utf-8'))
+#     os.write(write_file,buffer)
+#     buffer = os.read(read_file,10)

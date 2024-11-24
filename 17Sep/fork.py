@@ -1,15 +1,20 @@
 import os
 
-# multiple forks
+# # multiple forks
 # pid = os.fork()
 # print(f"Parent Process {os.getpid()} Created Child {pid}")
+# print("print fork 1")
+# print()
 # pid = os.fork()
 # print(f"Parent Process {os.getpid()} Created Child {pid}")
+# print("print fork 2")
+# print()
 # pid = os.fork()
 # print(f"Parent Process {os.getpid()} Created Child {pid}")
+# print("print fork 3")
+# print()
 
-# different code for parent and child
-
+# # different code for parent and child
 # def child():
 #     print("Child is running")
     
@@ -32,7 +37,7 @@ import os
 
 
 def child():
-    os.execl('/bin/ls','ls','-l')
+    os.execl('/bin/ls','ls','-l')  
     
 def parent():
     print("Parent is running")
